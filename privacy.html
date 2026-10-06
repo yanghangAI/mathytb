@@ -3,53 +3,98 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MathYTB uploader: privacy policy</title>
+<title>MathYTB privacy policy</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <main>
-<h1>Privacy policy</h1>
-<p class="meta">MathYTB uploader. Effective 6 October 2026.</p>
+<h1>MathYTB privacy policy</h1>
+<p class="meta">Effective 6 October 2026.</p>
 
-<h2>Who uses it</h2>
-<p>MathYTB uploader is a personal tool. Its only user is its owner, who
-signs in with their own Google account to manage their own YouTube
-channel.</p>
+<p>This policy explains what data MathYTB accesses, how it uses that data,
+where the data is stored, and who it is shared with. MathYTB is a
+personal application: its only user is its owner, who signs in with their
+own Google account to publish videos to their own YouTube channel.</p>
 
-<h2>What it accesses</h2>
-<p>With the owner's permission, it uses two YouTube scopes:
-<code>youtube.upload</code>, to upload videos, and
-<code>youtube.force-ssl</code>, to set titles, descriptions, captions and
-thumbnails and to read the channel's own videos and playlists. It
-accesses nothing outside the owner's channel.</p>
+<h2>1. Data MathYTB accesses</h2>
+<p>When the owner signs in, MathYTB asks Google for two permissions
+(OAuth scopes):</p>
+<ul>
+  <li><code>https://www.googleapis.com/auth/youtube.upload</code>: to
+      upload videos to the owner's channel;</li>
+  <li><code>https://www.googleapis.com/auth/youtube.force-ssl</code>: to
+      manage those videos (titles, descriptions, thumbnails, captions) and
+      to read the channel's videos and playlists.</li>
+</ul>
+<p>With these permissions MathYTB handles the following data:</p>
+<ul>
+  <li><strong>Content the owner provides:</strong> the video files,
+      titles, descriptions, tags, thumbnails and caption files that the
+      owner created and chooses to publish.</li>
+  <li><strong>Channel data:</strong> the owner's channel ID, and the IDs,
+      titles, privacy settings and playlists of the owner's own videos.</li>
+  <li><strong>Sign-in credentials:</strong> the OAuth access and refresh
+      tokens that Google issues after the owner signs in.</li>
+</ul>
+<p>MathYTB does not access the owner's email, contacts, comments,
+subscribers, analytics or any other Google data, and it never accesses
+any other person's account or channel.</p>
 
-<h2>What it stores</h2>
-<p>The sign-in token Google issues is stored only on the owner's own
-computer. No data is sent to any server other than Google's own APIs.</p>
+<h2>2. How MathYTB uses the data</h2>
+<ul>
+  <li>Video files, metadata, thumbnails and captions are sent to YouTube
+      only to publish them on the owner's channel.</li>
+  <li>Channel data is read only so the owner can see which videos and
+      playlists are already published.</li>
+  <li>Sign-in tokens are used only to call the YouTube Data API on the
+      owner's behalf.</li>
+</ul>
+<p>The data is not used for advertising, profiling, analytics or any
+purpose other than publishing the owner's own videos.</p>
 
-<h2>What it does not do</h2>
-<p>It collects no data about anyone else. It has no analytics or tracking.
-It does not share, sell or transfer any data to anyone.</p>
+<h2>3. Where the data is stored</h2>
+<p>MathYTB runs only on the owner's own computer. The sign-in tokens are
+stored in a local file on that computer, readable only by the owner.
+MathYTB has no server and no database: it sends data only to Google's
+YouTube Data API, over an encrypted (HTTPS) connection.</p>
 
-<h2>Google API Services</h2>
-<p>MathYTB uploader's use of information received from Google APIs
+<h2>4. Sharing</h2>
+<p>MathYTB does not sell, share, transfer or disclose any data to anyone.
+The only recipient of any data is YouTube itself, which receives the
+videos and details the owner chooses to publish.</p>
+
+<h2>5. Retention and deletion</h2>
+<p>Sign-in tokens are kept on the owner's computer until the owner
+deletes them or revokes access. Published videos stay on YouTube until the
+owner deletes them there. Access can be revoked at any time from
+<a href="https://myaccount.google.com/permissions">Google Account
+permissions</a>, after which MathYTB can no longer access the channel.</p>
+
+<h2>6. Google API Services User Data Policy</h2>
+<p>MathYTB's use and transfer of information received from Google APIs
 adheres to the
 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google
 API Services User Data Policy</a>, including the Limited Use
-requirements. Use of YouTube is also governed by the
-<a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+requirements. Use of YouTube through MathYTB is also subject to the
+<a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and
+the <a href="https://policies.google.com/privacy">Google Privacy
+Policy</a>.</p>
 
-<h2>Revoking access</h2>
-<p>Access can be removed at any time from
-<a href="https://myaccount.google.com/permissions">Google Account
-permissions</a>.</p>
+<h2>7. Children</h2>
+<p>MathYTB is not directed at children and collects no data from
+anyone, including children.</p>
 
-<h2>Contact</h2>
-<p>Through <a href="https://github.com/yanghangAI">GitHub</a>.</p>
+<h2>8. Changes</h2>
+<p>Any change to this policy will be published on this page, with a new
+effective date.</p>
+
+<h2>9. Contact</h2>
+<p>Questions about this policy can be sent to the owner through
+<a href="https://github.com/yanghangAI">GitHub</a>.</p>
 
 <nav>
-  <a href="index.html">Home</a>
-  <a href="terms.html">Terms of service</a>
+  <a href="https://yanghangai.github.io/mathytb/">MathYTB home</a>
+  <a href="https://yanghangai.github.io/mathytb/terms.html">Terms of service</a>
 </nav>
 </main>
 </body>
